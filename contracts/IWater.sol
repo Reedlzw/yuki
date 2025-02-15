@@ -17,4 +17,7 @@ interface IWater {
         address receiver,
         address owner
     ) external returns (uint256);
+
+    function maxWithdraw(address owner) external view returns (uint256);
+    function previewRedeem(uint256 assets) external view returns (uint256);
 }
